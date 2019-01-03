@@ -1,0 +1,53 @@
+@media (min-width: 600px) {
+    .body-frame {
+        color: #394B59;
+        background-color: #394B59;
+        height: 1200px;
+    }
+}
+
+.text-frame {
+    font-size: 1000%;
+    display: flex;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-inside {
+    color: #282c34;
+}
+
+.second-frame {
+    color: #BFCCD6;
+    background-color: #BFCCD6;
+    height: 1200px;
+}
+
+.third-frame {
+    color: #394B59;
+    background-color: #394B59;
+    height: 1200px;
+}
+
+.intermediate-frame {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    height: 40px;
+}
+
+.workline {
+    margin-top: 10%;
+}
+
+.secondline {
+    margin-top: 15%;
+}
+
+.thirdline {
+    margin-top: 20%;
+}
+
+.forthline {
+    margin-top: 20%;
+}
