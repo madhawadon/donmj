@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import Typing from 'react-typing-animation';
 import '../css/body.css';
 import {Element} from 'react-scroll';
-import Timeline from './Timeline';
+import Time from './Timeline';
+import {Button} from '@blueprintjs/core';
 
 class Body extends Component {
     render() {
@@ -22,20 +23,26 @@ class Body extends Component {
                     </div>
                 </Element>
                 <Element name="achieve" className="element">
-                    <div className={'second-frame'}>
-                        <Timeline/>
+                    <div className={"second-frame"}>
+                        <Time/>
                     </div>
                 </Element>
                 <Element name="resume" className="element">
-                    <div className={'intermediate-frame'}>
-                    </div>
                     <div className={'third-frame'}>
-
+                        <div className={'button-frame'}>
+                            <Button className="bp3-minimal" onClick={this.openTab} large={true} icon="document"
+                                    text="Click Here for Resume" style={{color: '#FFF'}}/>
+                        </div>
                     </div>
                 </Element>
             </div>
 
         )
+    }
+
+    openTab = () => {
+        let url = 'https://drive.google.com/file/d/1UM963tEWT__picOYICbId2d2QMIgWsdp/view?usp=sharing';
+        window.open(url, '_blank');
     }
 }
 
